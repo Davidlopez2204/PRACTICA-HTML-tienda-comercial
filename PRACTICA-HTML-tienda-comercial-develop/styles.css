@@ -1,0 +1,138 @@
+/* Reinicia margenes para que se vea mas acomodado */
+* {
+  margin: 0; /*crea un espacio por fuera de los elemntos (el 0px significa una separacion alrededor de la caja)*/
+  padding: 0; /* al reves que el margin essta es por dentro del elemento*/
+  box-sizing: border-box; /*calculo del tamaño de un ancho total de la caja */
+  font-family: Arial, Helvetica, sans-serif; /*tipo de letra*/
+}
+
+/* Estructura  del body */
+body {
+  display: flex; /* display es como se comporta el elemento y la accion flex es para ordenar en fila o columna */
+  flex-direction: column; /* organiza elementos en columna */
+  align-items: center; /* centra los elementos horizontalmente */
+  background: #000000; /* color de fondo */
+}
+
+/* estructura del header */
+header {
+  width: 100%; /* esto optimiza el tamaño del header */
+  background: rgba(255, 255, 255, 0.385); /* color de fondo del header */
+  padding: 20px;
+  margin-top: 40px; /* margin-top es para la separacion del espacio de arriba*/
+  border-radius: 15px; /*para tener esquinas redondeadas */
+  border: 2px solid #302525; /* color y grosor del header*/
+  text-align: center; /* para centar el texto */
+}
+
+/* estructura del main */
+main {
+  width: 100%;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.579);
+  padding: 40px;
+  border-radius: 50px;
+  border: 2px solid #333;
+}
+/* estructura del titulo dentro del main */
+.titulo {
+  /* seleccionamos la clase titulo */
+  text-align: center;
+  font-size: 2rem; /* tamaño de letra */
+  text-transform: capitalize; /* convierte la primera letra en mayuscula */
+  margin-bottom: 30px;
+}
+
+/* estructura de la galería (figure + caption) */
+.imagenes {
+  /* seleccionamos la clase imagnes */
+  display: flex;
+  flex-wrap: wrap; /* permite que las imagenes se ajusten a la pantalla */
+  justify-content: space-between; /* aliniacion horizontal entre las imagenes espacio-extremo-espacio */
+  padding: 20px;
+  border: 2px solid #686060;
+  border-radius: 20px;
+  margin-bottom: 20px; /* separacion abajo del elemento */
+}
+
+.imagenes figure {
+  /* seleccionamos el elemento figure dentro de la clase imagenes */
+  width: 20%; /* ancho de cada imagen */
+  text-align: center;
+}
+
+.imagenes img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* estructura de especificaciones */
+.espicificaciones {
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.espicificaciones table {
+  /* seleccionamos el elemento table dentro de especificaciones */
+  width: 90%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.579); /* une los bordes de las celdas para evitar doble linea */
+}
+
+.espicificaciones td {
+  /* seleccionamos el elemento td dentro de especifiacaciones */
+  border: 1px solid #000000;
+  padding: 8px;
+}
+
+/* estructura de la descripcion */
+.descripcion {
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.579);
+}
+
+/* estructura de garantia y envios */
+.garantria-envios {
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.579);
+}
+
+.garantria-envios ul { /* sleccionamos elemento ul dentro de garantias y envios */
+  margin-left: 25px;
+}
+
+/* estructura de enlaces */
+.enlaces {
+  padding: 20px;
+  border: 2px solid #9d7272;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.enlaces ul { /* seleccionamos el elemento ul dentro de enlaces */
+  list-style: none; /* estilos de listas y el none le quita los puntos */
+}
+
+.enlaces a { /* seleccionamos el elemento a dentro de enlaces */
+  text-decoration: none; /* quita el subrayado de los enlaces */
+  color: rgba(255, 0, 0, 0.579);
+}
+
+/* estructura del footer*/
+footer { 
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.579);
+}
